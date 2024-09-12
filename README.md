@@ -201,5 +201,3 @@
       ```bash
       sudo apt install dstat
       ```
-
-Feel free to use these commands according to your needs for monitoring and analyzing CPU performance.
