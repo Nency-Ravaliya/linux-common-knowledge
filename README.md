@@ -225,7 +225,7 @@ telinit 6
 sudo systemct isolate reboot.target
 ```
 
-## 8. Reboot the system:
+## 8. Power-Off the system:
 ```
 sudo poweroff
 telinit 0
