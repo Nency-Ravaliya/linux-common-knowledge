@@ -19,12 +19,12 @@
   ```
   
 
-- **List all disks and partitions:**
+- **List all disks and partitions**:
   ```
   lsblk
   ```
   
-- `du` Command (Disk Usage)
+- **`du` Command (Disk Usage)**:
   ```
   du
   du -h
@@ -55,7 +55,7 @@
 
  ## 3. Active Process Commands
  
-- List all running processes:
+- **List all running processes**:
   ```
   ps
   ps -e
@@ -65,34 +65,32 @@
   pgrep -a .
   ```
 
-- Dynamic real-time view of active processes:
+- **Dynamic real-time view of active processes**:
   `top`
 
-- Detailed interactive view of active processes:
+- **Detailed interactive view of active processes**:
   `htop`
 
-- List processes with pgrep:
+- **List processes with pgrep**:
   `pgrep -l .`
 
 ## 4. Group-Related Commands
 
-- List all groups in the system:
+- **List all groups in the system**:
   ```
   cat /etc/group
   groups
   lslogins --groups
   ```
 
-- Show only group names:
+- **Show only group names**:
   `cut -d: -f1 /etc/group`
 
-- Get all groups using getent:
+- **Get all groups using `getent`**:
   `getent group`
 
-- Show groups for a specific user:
+- **Show groups for a specific user**:
   `groups username`
 
-- Using awk to list groups:
+- **Using awk to list groups**:
   `awk -F: '{print $1}' /etc/group`
-
-  
