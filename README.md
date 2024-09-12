@@ -7,18 +7,37 @@
 - **Check disk space usage**:
   ```bash
   df -h
+  df
   ```
 
 - **Check free and used memory**:
-  `free -h`
+  ```
+  free -h
+  free
+  free -m
+  free -g
+  ```
+  
 
 - **List all disks and partitions:**
-  `lsblk`
+  ```
+  lsblk
+  ```
+  
+- `du` Command (Disk Usage)
+  ```
+  du
+  du -h
+  du -sh /home
+  cat /proc/partitions
+  ls /dev/disk/by-id/
+  sudo hwinfo --disk
+  ```
 
 - **Detailed information on storage devices**:
   ` sudo fdisk -l`
 
-  ## 2. User-Related Commands
+## 2. User-Related Commands
   
 - **List all users in the system**:
     `cat /etc/passwd`
@@ -29,6 +48,7 @@
   w
   compgen -u
   users
+  lslogins
   lslogins -u
   getent passwd
   ```
@@ -36,7 +56,14 @@
  ## 3. Active Process Commands
  
 - List all running processes:
-  `ps aux`
+  ```
+  ps
+  ps -e
+  ps aux`
+  netstat -tulnp
+  lsof
+  pgrep -a .
+  ```
 
 - Dynamic real-time view of active processes:
   `top`
@@ -50,7 +77,11 @@
 ## 4. Group-Related Commands
 
 - List all groups in the system:
-  `cat /etc/group`
+  ```
+  cat /etc/group
+  groups
+  lslogins --groups
+  ```
 
 - Show only group names:
   `cut -d: -f1 /etc/group`
