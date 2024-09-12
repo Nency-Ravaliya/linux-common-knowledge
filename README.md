@@ -1,6 +1,6 @@
 # linux-common-knowledge
 
-# Linux Commands for Disk Usage, Users, Active Processes, and Groups
+# Linux Commands for Disk Usage, Users, Active Processes, and Groups, Blocks, CPU utilization
 
 ## 1. Disk Usage Commands
 
