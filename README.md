@@ -201,3 +201,19 @@
       ```bash
       sudo apt install dstat
       ```
+## 6. Check the system logs:
+
+```
+cat /var/log/syslog
+less /var/log/syslog
+tail /var/log/syslog
+tail -f /var/log/syslog
+head /var/log/syslog
+grep "error" /var/log/syslog
+journalctl
+journalctl -u <service_name>
+dmesg
+sudo logrotate /etc/logrotate.conf
+cat /var/log/messages
+systemctl status <service_name>
+```
