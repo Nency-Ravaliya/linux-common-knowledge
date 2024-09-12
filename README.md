@@ -94,3 +94,112 @@
 
 - **Using awk to list groups**:
   `awk -F: '{print $1}' /etc/group`
+
+ ## 5. CPU Utilization Commands
+ 
+1. **`top`**
+   - Real-time CPU and system performance monitor.
+   - **Command:**
+     ```bash
+     top
+     ```
+
+2. **`htop`**
+   - Interactive process viewer with CPU usage (requires installation).
+   - **Command:**
+     ```bash
+     htop
+     ```
+   - **Installation (if not installed):**
+     ```bash
+     sudo apt install htop
+     ```
+
+3. **`mpstat`**
+   - Displays CPU usage statistics per core (part of `sysstat` package).
+   - **Command:**
+     ```bash
+     mpstat
+     ```
+   - **Installation (if not installed):**
+     ```bash
+     sudo apt install sysstat
+     ```
+
+4. **`iostat`**
+   - Reports CPU and I/O statistics (part of `sysstat` package).
+   - **Command:**
+     ```bash
+     iostat
+     ```
+   - **Installation (if not installed):**
+     ```bash
+     sudo apt install sysstat
+     ```
+
+5. **`sar`**
+   - Provides historical CPU usage statistics (part of `sysstat` package).
+   - **Command:**
+     ```bash
+     sar -u 1 3
+     ```
+   - **Installation (if not installed):**
+     ```bash
+     sudo apt install sysstat
+     ```
+
+6. **`vmstat`**
+   - Shows CPU, memory, and system statistics.
+   - **Command:**
+     ```bash
+     vmstat 1 5
+     ```
+
+7. **`uptime`**
+   - Displays system load averages over the past 1, 5, and 15 minutes.
+   - **Command:**
+     ```bash
+     uptime
+     ```
+
+8. **`ps`**
+   - Shows CPU usage by individual processes.
+   - **Command:**
+     ```bash
+     ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu
+     ```
+
+9. **`pidstat`**
+   - CPU usage statistics for individual processes (part of `sysstat` package).
+   - **Command:**
+     ```bash
+     pidstat
+     ```
+   - **Installation (if not installed):**
+     ```bash
+     sudo apt install sysstat
+     ```
+
+10. **`nmon`**
+    - Real-time CPU and system performance monitor (requires installation).
+    - **Command:**
+      ```bash
+      nmon
+      ```
+    - **Installation (if not installed):**
+      ```bash
+      sudo apt install nmon
+      ```
+
+11. **`dstat`**
+    - Combines CPU, disk, and network statistics (requires installation).
+    - **Command:**
+      ```bash
+      dstat
+      ```
+    - **Installation (if not installed):**
+      ```bash
+      sudo apt install dstat
+      ```
+
+Feel free to use these commands according to your needs for monitoring and analyzing CPU performance.
