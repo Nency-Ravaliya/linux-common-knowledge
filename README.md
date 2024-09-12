@@ -217,3 +217,17 @@ sudo logrotate /etc/logrotate.conf
 cat /var/log/messages
 systemctl status <service_name>
 ```
+
+## 7. Reboot the system:
+```
+sudo reboot
+telinit 6
+sudo systemct isolate reboot.target
+```
+
+## 8. Reboot the system:
+```
+sudo poweroff
+telinit 0
+sudo systemctl isolate poweroff.target
+```
